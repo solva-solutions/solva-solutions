@@ -91,7 +91,7 @@ https://ccvalidators.com
 | `Babylon` | `bbn-1` | `bbnvaloper1eunu7l7qfmemdw4xv7apejl28jzgd3t346dh63` | [delegate BABY](https://wallet.keplr.app/chains/babylon?modal=staking&chain=bbn-1&validator_address=bbnvaloper1eunu7l7qfmemdw4xv7apejl28jzgd3t346dh63&step_id=2) |
 | `Neutron` | `neutron-1` | `neutronvaloper1e6rw7a7ngjmn8qjqfymu4en0px7hlr27fpf55k` | [delegate NTRN](https://wallet.keplr.app/chains/neutron?modal=staking&chain=neutron-1&validator_address=neutronvaloper1e6rw7a7ngjmn8qjqfymu4en0px7hlr27fpf55k&step_id=2) |
 | `NEAR Protocol` | `mainnet` | `cryptocrew.poolv1.near` | [delegate NEAR](https://app.mynearwallet.com/staking/cryptocrew.poolv1.near/stake) |
-| `THORChain` | `thorchain-1` | `thor10ma7lf07ld98wcm3nvt7uptase4mhrt82rkvg4` | [delegate RUNE](https://ccvalidators.com/blog/cryptocrew-support-thorchain-ibc-infrastructure) |
+| `THORChain` | `thorchain-1` | `thor10ma7lf07ld98wcm3nvt7uptase4mhrt82rkvg4` | [delegate RUNE](https://solva.solutions/staking/networks/thorchain) |
 | `Ethereum` | `lido` | `0x4420559d41b04cc68f91ef8b6cc7842a8384c203` | [delegate ETH](https://stake.lido.fi) |
 | `Radix` | `olymipa` | `validator_rdx1sdk493n96m2v8t0st6hgrdmdua8y6kp84lcwv35qr7umvj7ar4x3e8` | [delegate XRD](https://dashboard.radixdlt.com/network-staking/validator_rdx1sdk493n96m2v8t0st6hgrdmdua8y6kp84lcwv35qr7umvj7ar4x3e8) |
 | `Avail` | `mainnet` | `5HB3SEzH6cP5BE4S6rwhXoji7wy1VQkDX7kb4yQ92TPGhgwF` | [delegate AVAIL](https://explorer.avail.so/#/staking) |
