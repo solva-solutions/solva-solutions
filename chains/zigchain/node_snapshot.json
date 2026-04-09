@@ -1,13 +1,13 @@
 {
   "network": "zigchain-1",
-  "height": "7818028",
+  "height": "7843628",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchain/zigchain-1_7818028.tar.lz4",
-  "filename": "zigchain-1_7818028.tar.lz4",
-  "date": "2026-04-08 17:40",
+  "url": "https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchain/zigchain-1_7843628.tar.lz4",
+  "filename": "zigchain-1_7843628.tar.lz4",
+  "date": "2026-04-09 16:38",
   "database": "goleveldb",
-  "size": "231M",
-  "checksum": "5fc1d283f999e4a1fa8fd73b3f3d54ff45681a15f0e8055f23f07170503fc827",
+  "size": "275M",
+  "checksum": "40199852e7fd3f87ae647996a30c6ba070c155e1f96e72bab26829c9d29d0d84",
   "provider": "CryptoCrew"
 }
