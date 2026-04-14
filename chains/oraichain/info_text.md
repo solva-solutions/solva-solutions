@@ -11,6 +11,5 @@ Stake ORAI tokens by delegating them to validators using a supported wallet. In 
 &nbsp;
 
 - [Keplr Wallet](https://www.keplr.app)
-- [Leap](https://www.leapwallet.io)
 - [Cosmostation](https://www.cosmostation.io)
 - [OWallet](https://owallet.dev)
