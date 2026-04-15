@@ -6,6 +6,7 @@ CryptoCrew provides daily node-snapshots for the chains we validate. These snaps
  
 | DOWNLOAD | date | chain id | size | height | checksum |
 | -------- | ---- | -------- | ---- | ------ | -------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2806989.tar.lz4)** | Wed Apr 15 2026 08:21:43 UTC | `Avail DA Mainnet` | 6.0G | 2806989 | `d93a0373a759bb1a93d394597d143df9c54b3589cbda1ed35558c257c208e40d` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2802669.tar.lz4)** | Tue Apr 14 2026 08:22:19 UTC | `Avail DA Mainnet` | 6.0G | 2802669 | `7e345567b9ad4d1e09ef83d045ce849c754fe256b84271f455dd84acb765ba16` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2798349.tar.lz4)** | Mon Apr 13 2026 08:21:07 UTC | `Avail DA Mainnet` | 6.0G | 2798349 | `4c34d78ea420d0f5464227b463b37ca7a2707fb080272b695d39fe65e22d7cb3` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2794029.tar.lz4)** | Sun Apr 12 2026 08:18:40 UTC | `Avail DA Mainnet` | 6.0G | 2794029 | `a6fa0c20cdd434fd202d817e56d4660212449c9087645a1747955b6e625f0079` |
@@ -61,7 +62,7 @@ sudo apt install wget lz4
 AVAIL_HOME=$HOME/avail/node-data/chains/avail_da_mainnet
 
 # Set snapshot url
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2802669.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2806989.tar.lz4"
 
 # Download snapshot
 wget -4 $URL
@@ -84,7 +85,7 @@ sudo apt install wget lz4
 AVAIL_HOME=$HOME/avail/node-data/chains/avail_da_mainnet
 
 # Set snapshot url
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2802669.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/avail/Avail_DA_Mainnet_2806989.tar.lz4"
 
 # Download & extract snapshot
 wget -O - $URL | lz4 -d | tar -xvf - -C $AVAIL_HOME
