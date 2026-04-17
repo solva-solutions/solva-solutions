@@ -3,14 +3,14 @@ CryptoCrew provides full Archive Snapshots for selected chains. These snapshots 
 gaiad version: `v27.1.0`
 | DOWNLOAD | date | chain id | size | height | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_30569292.tar.lz4)** | Fri Apr 10 2026 09:05:52 UTC | `cosmoshub-4` | 18T | 30569292 | `archive` |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_30673832.tar.lz4)** | Fri Apr 17 2026 09:14:47 UTC | `cosmoshub-4` | 18T | 30673832 | `archive` |
 ---
 
 ## Download instructions
 Download & extract snapshot:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_30569292.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_30673832.tar.lz4"
 cd $HOME/.gaia
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
