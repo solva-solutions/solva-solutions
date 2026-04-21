@@ -3,14 +3,14 @@ CryptoCrew provides full Archive Snapshots for selected chains. These snapshots 
 persistenceCore version: `v16.0.1`
 | DOWNLOAD | date | chain id | size | height | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/persistence/core-1_26936629.tar.lz4)** | Tue Apr 14 2026 19:12:34 UTC | `core-1` | 1.4T | 26936629 | `archive` |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/persistence/core-1_27039689.tar.lz4)** | Tue Apr 21 2026 19:14:29 UTC | `core-1` | 1.4T | 27039689 | `archive` |
 ---
 
 ## Download instructions
 Download & extract snapshot:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/persistence/core-1_26936629.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/persistence/core-1_27039689.tar.lz4"
 cd $HOME/.persistenceCore
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
