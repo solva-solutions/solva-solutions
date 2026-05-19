@@ -102,4 +102,5 @@ https://ccvalidators.com
 | `Seda` | `seda-1` | `sedavaloper1fzajuz35a4h5sf88lkzefnryped5juzqlg63kv` | [delegate SEDA](https://ping.pub/seda/staking/sedavaloper1fzajuz35a4h5sf88lkzefnryped5juzqlg63kv) |
 | `Saga` | `ssc-1` | `sagavaloper13pcp0cstupahzz3n36x0dlhpa9fr8m9vlcy78y` | [delegate SAGA](https://ping.pub/saga/staking/sagavaloper13pcp0cstupahzz3n36x0dlhpa9fr8m9vlcy78y) |
 | `Zigchain` | `Zigchain-1` | `zigvaloper19jhukjxn9ckjl5c95453hrmuypgarftg8exy6s` | [delegate ZIG](https://hub.zigchain.com/validators/detail/?address=zigvaloper19jhukjxn9ckjl5c95453hrmuypgarftg8exy6s) |
+| `Sei` | `pacific-1` | `seivaloper1rrw434ua5g5v3786t0ww35we00mqurcny60u8m` | [delegate SEI]() |
 | `Radix` | `olymipa` | `rv1qtsyl0q7nl0642dp9nehp5579cclskxg6v70yphy5wcfxpmjfqc66s4l9md` | [delegate XRD](https://explorer.radixdlt.com/#/validators/rv1qtsyl0q7nl0642dp9nehp5579cclskxg6v70yphy5wcfxpmjfqc66s4l9md) |
