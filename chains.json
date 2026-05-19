@@ -674,10 +674,10 @@
       "operator_account": "thor1tkn7706tp2js0j4lsgemttmgwt2jym8kngs7en",
       "stake_link": "https://solva.solutions/staking/networks/thorchain",
       "rpc": [
-        "https://rpc.ninerealms.com:443"
+        "https://rpc.thorchain.network"
       ],
       "rest": [
-        "https://thornode.ninerealms.com:443"
+        "https://thornode.thorchain.network"
       ],
       "apr": "",
       "coingecko_id": "thorchain",
