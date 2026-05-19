@@ -891,6 +891,29 @@
       "coingecko_id": "zignaly",
       "chain_id": "Zigchain-1",
       "trade_url": "https://www.bybit.com/trade/spot/ZIG/USDT"
+    },
+    {
+      "name": "sei",
+      "prettyName": "Sei",
+      "logo_url_svg": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/sei/logo_sei.svg",
+      "logo_url_png": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/sei/logo_sei.png",
+      "symbol": "SEI",
+      "denom": "usei",
+      "decimals": "6",
+      "address": "seivaloper1rrw434ua5g5v3786t0ww35we00mqurcny60u8m",
+      "operator_account": "sei1rrw434ua5g5v3786t0ww35we00mqurcn647jxt ",
+      "relayer_accounts": [
+      ],
+      "stake_link": "",
+      "rpc": [
+        "https://rpc.sei-apis.com"
+      ],
+      "rest": [
+      ],
+      "apr": "",
+      "coingecko_id": "sei-network",
+      "chain_id": "pacific-1",
+      "trade_url": ""
     }
   ]
 }
