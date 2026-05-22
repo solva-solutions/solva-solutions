@@ -902,18 +902,18 @@
       "decimals": "6",
       "address": "seivaloper1rrw434ua5g5v3786t0ww35we00mqurcny60u8m",
       "operator_account": "sei1rrw434ua5g5v3786t0ww35we00mqurcn647jxt ",
+      "stake_link": "https://dashboard.sei.io/stake/seivaloper1rrw434ua5g5v3786t0ww35we00mqurcny60u8m",
       "relayer_accounts": [
       ],
-      "stake_link": "",
       "rpc": [
         "https://rpc.sei-apis.com"
       ],
       "rest": [
       ],
-      "apr": "",
+      "apr": "6.29",
       "coingecko_id": "sei-network",
       "chain_id": "pacific-1",
-      "trade_url": ""
+      "trade_url": "https://www.binance.com/en/trade/SEI_USDT"
     }
   ]
 }
