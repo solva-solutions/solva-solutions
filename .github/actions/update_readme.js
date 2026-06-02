@@ -7,6 +7,7 @@ const readmeFilePath = path.join(__dirname, '..', '..', 'README.md');
 // Read chains.json
 const chainsData = JSON.parse(fs.readFileSync(chainsFilePath, 'utf8'));
 const { chains } = chainsData;
+chains.sort((a, b) => a.prettyName.localeCompare(b.prettyName));
 
 // Generate the validators table
 let validatorsTable = '| Chain Name         | Chain ID                 | Validator address                                            | Link                  |\n| ----------------- | -------------------------- | ------------------------------------------------------------ | --------------------- |\n';

@@ -16,9 +16,13 @@ _Enterprise Grade Blockchain Operations. Built for Security._
 
 ## About
 
-Solva is a blockchain infrastructure company founded in 2021. Originally operating under the public brand CryptoCrew Validators, the company evolved from validator and IBC relayer operations into a full-stack infrastructure provider supporting staking, chain launches, managed node infrastructure, and mission-critical blockchain operations. Today, Solva designs, builds, and operates globally distributed infrastructure engineered for reliability, security, and performance.
+Solva is a blockchain infrastructure and operations company trusted by protocols, institutional clients, custodians, and high-performance trading firms.
 
-Our team has secured and supported billions in digital assets across multiple blockchain ecosystems and has been actively involved in the Interchain since the early days of IBC, including operating one of the industry's most experienced relayer infrastructures.
+Founded in 2021, Solva designs, deploys, and operates mission-critical blockchain infrastructure across 40+ networks. From validator operations and institutional staking to appchain deployments, RPC infrastructure, and cross-chain connectivity, Solva delivers production-ready systems engineered for reliability, security, and performance.
+
+Operating from Europe with globally distributed infrastructure, Solva maintains enterprise-grade operational standards including multi-region redundancy, advanced monitoring, automated failover procedures, and MPC-based key management. Our infrastructure secures millions of dollars in digital assets and supports some of the industry's most demanding production environments.
+
+As one of the earliest operators of large-scale IBC relayer infrastructure, Solva continues to play an active role in advancing interoperability and blockchain infrastructure across the broader ecosystem.
 
 ## Team & Operations
 
@@ -71,7 +75,7 @@ The best ways to reach us:
 - Official Website: [solva.solutions](https://solva.solutions)  
 - Twitter: [@crypto_crew](https://twitter.com/crypto_crew)  
 - Reddit: [r/cryptocrewvalidators](https://www.reddit.com/r/cryptocrewvalidators)  
-- Telegram: [CryptoCrew Validators public staker's lounge](https://t.me/solva_staking) or @clemensg (emergency contact)
+- Telegram: [Solva public group](https://t.me/solva_staking) or @clemensg (emergency contact)
 - Discord: @ccclaimens (emergency contact)
 - email: info@solva.solutions
 
