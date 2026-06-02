@@ -1,10 +1,10 @@
 ```yaml
-Moniker: ✅ CryptoCrew Validators #IBCgang
-Email: info@ccvalidators.com
+Moniker: Solva
+Official Website: https://solva.solutions
+Email: info@solva.solutions
+Telegram public group: https://t.me/solva_staking
 Telegram emergency contact: https://t.me/clemensg
-Discord emergency contact: Claimens | CryptoCrew#3460
-Telegram public group: https://t.me/cryptocrew_validators
-Website: https://ccvalidators.com
+Discord emergency contact: @ccclaimens
 ```
 
 # Solva
