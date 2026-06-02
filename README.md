@@ -12,7 +12,7 @@ public repo of [solva.solutions](https://solva.solutions)
 
 _Enterprise Grade Blockchain Operations. Built for Security._
 
- ![solva.solutions](./solva-s_logo-400x400.png)
+ ![solva.solutions](./solva-logo-_white.png)
 
 ## About
 
