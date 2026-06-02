@@ -16,7 +16,7 @@ _Enterprise Grade Blockchain Operations. Built for Security._
 
 ## About
 
-Solva Solutions is a blockchain infrastructure company founded in 2021. Originally operating under the public brand CryptoCrew Validators, the company evolved from validator and IBC relayer operations into a full-stack infrastructure provider supporting staking, chain launches, managed node infrastructure, and mission-critical blockchain operations. Today, Solva designs, builds, and operates globally distributed infrastructure engineered for reliability, security, and performance.
+Solva is a blockchain infrastructure company founded in 2021. Originally operating under the public brand CryptoCrew Validators, the company evolved from validator and IBC relayer operations into a full-stack infrastructure provider supporting staking, chain launches, managed node infrastructure, and mission-critical blockchain operations. Today, Solva designs, builds, and operates globally distributed infrastructure engineered for reliability, security, and performance.
 
 Our team has secured and supported billions in digital assets across multiple blockchain ecosystems and has been actively involved in the Interchain since the early days of IBC, including operating one of the industry's most experienced relayer infrastructures.
 
