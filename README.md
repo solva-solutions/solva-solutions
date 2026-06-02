@@ -8,7 +8,7 @@ Discord emergency contact: @ccclaimens
 ```
 
 # Solva
-public repo of [solva.solutions](https://solva.solutions)
+**Public service repository of [solva.solutions](https://solva.solutions)**
 
 _Enterprise Grade Blockchain Operations. Built for Security._
 
