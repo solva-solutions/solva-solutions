@@ -7,27 +7,31 @@ Telegram public group: https://t.me/cryptocrew_validators
 Website: https://ccvalidators.com
 ```
 
-# CryptoCrew-Validators 
-public repo of ccvalidators
+# Solva
+public repo of [solva.solutions](https://solva.solutions)
 
-_Infrastructure-Provider, Validator, IBC-Relayer - We power the interchain._
+_Enterprise Grade Blockchain Operations. Built for Security._
 
- ![ccv](ccv.png)
+ ![solva.solutions](./solva-s_logo-400x400.png)
 
+## About
+
+Solva Solutions is a blockchain infrastructure company founded in 2021. Originally operating under the public brand CryptoCrew Validators, the company evolved from validator and IBC relayer operations into a full-stack infrastructure provider supporting staking, chain launches, managed node infrastructure, and mission-critical blockchain operations. Today, Solva designs, builds, and operates globally distributed infrastructure engineered for reliability, security, and performance.
+
+Our team has secured and supported billions in digital assets across multiple blockchain ecosystems and has been actively involved in the Interchain since the early days of IBC, including operating one of the industry's most experienced relayer infrastructures.
 
 ## Team & Operations
 
-- experienced team based in Europe
-- multi-channel IBC-relayer
-- bare metal nodes in Tier-4 datacenters
-- powered by renewable energy sources
-- automated failover procedures
-- dedicated alert-systems & consensus metrics monitoring 
-- high validator availability & uptime-quotes of >99% over long term on other networks
-- active in governance
-- community tools & participation
-- constant commission policy
-
+- Institutional & business staking infrastructure
+- Professional validator operations
+- Multi-chain IBC relaying and cross-chain infrastructure
+- Managed RPC, archive node, and indexing services
+- Appchain deployment and protocol operations
+- Enterprise-grade monitoring and incident response
+- Bare metal infrastructure in premium datacenters
+- Automated failover and disaster recovery procedures
+- Active governance participation
+- Open-source tooling and ecosystem contributions
 
 | Name            | Role      | 
 | --------------- | --------- | 
@@ -37,30 +41,39 @@ _Infrastructure-Provider, Validator, IBC-Relayer - We power the interchain._
 | Paul            | DevOps    |
 | Andre           | Relations |
 | Simon           | Advisor   | 
-| q.prjct         | Support   |
-
 
 ## Service & Contributions
 
-We offer non-custodial staking solutions for a selected set of dPOS ledgers. As a trusted blockchain infrastructure provider we run enterprise-grade nodes in highly accessible and reliable Tier-4 datacenters, powered by 100% renewable energy sources.
+### Institutional Staking
 
-IBC (Internet Of Blockchains) is the heart of the Cosmos Ecosystem. As a multichain IBC-relayer & -Integrator we drive the heartbeat of Cosmos-SDK chains.
+Secure, non-custodial staking infrastructure for institutions, funds, custodians, protocols, and treasury managers seeking reliable participation in Proof-of-Stake networks.
 
+### Validator Operations
+
+Production-grade validator services focused on performance, uptime, operational excellence, and long-term network participation.
+
+### Cross-Chain Infrastructure
+
+Operation of multi-chain IBC relayer infrastructure and cross-chain connectivity services supporting the broader blockchain ecosystem.
+
+### Managed Nodes & RPC Services
+
+Dedicated RPC endpoints, archive nodes, indexers, and custom infrastructure deployments for teams requiring reliable blockchain access at scale.
+
+### Appchain Development & Operations
+
+End-to-end support for blockchain networks, from architecture and deployment through upgrades, maintenance, and long-term operations.
  
 ## Contact Us
 
 The best ways to reach us: 
 
+- Official Website: [solva.solutions](https://solva.solutions)  
 - Twitter: [@crypto_crew](https://twitter.com/crypto_crew)  
 - Reddit: [r/cryptocrewvalidators](https://www.reddit.com/r/cryptocrewvalidators)  
-- Telegram: [CryptoCrew Validators public staker's lounge](https://t.me/cryptocrew_validators) or @clemensg (emergency contact)
-- Discord: [CryptoCrew Validators public server](https://discord.gg/ACsTu6kh) or @Claimens#3460 (emergency contact)
-- email: info@ccvalidators.com / support@ccvalidators.com
-
- 
-### Website
-
-https://ccvalidators.com
+- Telegram: [CryptoCrew Validators public staker's lounge](https://t.me/solva_staking) or @clemensg (emergency contact)
+- Discord: @ccclaimens (emergency contact)
+- email: info@solva.solutions
 
 ## Validators live:
 
