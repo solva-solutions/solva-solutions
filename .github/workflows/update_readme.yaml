@@ -4,6 +4,7 @@ on:
   push:
     paths:
       - 'chains.json'
+  workflow_dispatch:
 
 jobs:
   update_readme:
