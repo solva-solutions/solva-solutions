@@ -3,6 +3,7 @@ CryptoCrew provides full Archive Snapshots for selected chains. These snapshots 
 osmosisd version: `v31.0.0-rc1-3-gcc93ee58d`
 | DOWNLOAD | date | chain id | size | height | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_63030972.tar.lz4)** | Wed Jun 03 2026 12:08:01 UTC | `osmosis-1` | 23T | 63030972 | `archive` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_62451013.tar.lz4)** | Wed May 27 2026 12:00:22 UTC | `osmosis-1` | 23T | 62451013 | `archive` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_61889636.tar.lz4)** | Wed May 20 2026 11:53:09 UTC | `osmosis-1` | 23T | 61889636 | `archive` |
 ---
@@ -11,7 +12,7 @@ osmosisd version: `v31.0.0-rc1-3-gcc93ee58d`
 Download & extract snapshot:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_62451013.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_63030972.tar.lz4"
 cd $HOME/.osmosisd
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
