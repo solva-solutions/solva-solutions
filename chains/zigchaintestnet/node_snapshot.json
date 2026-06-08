@@ -1,13 +1,13 @@
 {
   "network": "zig-test-2",
-  "height": "6240063",
+  "height": "6258816",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6240063.tar.lz4",
-  "filename": "zig-test-2_6240063.tar.lz4",
-  "date": "2026-06-07 15:55",
+  "url": "https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6258816.tar.lz4",
+  "filename": "zig-test-2_6258816.tar.lz4",
+  "date": "2026-06-08 21:08",
   "database": "goleveldb",
-  "size": "2.1G",
-  "checksum": "a5407312c68c4f0fd4161d9ceed46df2b64170f6f257903c3564f12cf56bb5cb",
+  "size": "2.7G",
+  "checksum": "d190e573c813bc2487eeba492fe17d61a3c759a9b2fb612f40db3ae1eb0e5c34",
   "provider": "CryptoCrew"
 }
