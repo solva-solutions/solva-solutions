@@ -1,0 +1,13 @@
+{
+  "network": "dydx-mainnet-1",
+  "height": "93632017",
+  "type": "pruned",
+  "mirror": "EU",
+  "url": "https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_93632017.tar.lz4",
+  "filename": "dydx-mainnet-1_93632017.tar.lz4",
+  "date": "2026-06-15 13:11",
+  "database": "goleveldb",
+  "size": "18G",
+  "checksum": "7e69d9d53727463c350c68659ce33ca939f3dd29edcf49400dda818e1790dc08",
+  "provider": "Solva"
+}
