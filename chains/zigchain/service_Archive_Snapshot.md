@@ -3,15 +3,15 @@ CryptoCrew provides full Archive Snapshots for selected chains. These snapshots 
 zigchaind version: `v4.0.0`
 | DOWNLOAD | date | chain id | size | height | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------------- |
+| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9722903.tar.lz4)** | Thu Jun 18 2026 15:34:54 UTC | `zigchain-1` | 602G | 9722903 | `archive` |
 | **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9532050.tar.lz4)** | Thu Jun 11 2026 15:48:40 UTC | `zigchain-1` | 584G | 9532050 | `archive` |
-| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9341424.tar.lz4)** | Thu Jun 04 2026 15:38:13 UTC | `zigchain-1` | 566G | 9341424 | `archive` |
 ---
 
 ## Download instructions
 Download & extract snapshot:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9532050.tar.lz4"
+URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9722903.tar.lz4"
 cd $HOME/.zigchain
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
