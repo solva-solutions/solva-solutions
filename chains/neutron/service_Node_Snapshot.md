@@ -3,8 +3,8 @@ Solva provides daily node-snapshots for the chains we validate. These snapshots 
 neutrond version: `v11.0.0`
 | DOWNLOAD | date | chain id | size | height | checksum |
 | -------- | ---- | -------- | ---- | ------ | -------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59441669.tar.lz4)** | Thu Jun 18 2026 15:10:39 UTC | `neutron-1` | 20G | 59441669 | `f6f8e9a00df3b10518485bd2c710637458bd22e67e5bb15e6f62b3c21bec3013` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59342884.tar.lz4)** | Wed Jun 17 2026 11:54:41 UTC | `neutron-1` | 13G | 59342884 | `c32c983d1a8d43d6c110f2dbbac2ce3372a4dfe9a95a479193f2db4b6f7a1f60` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59256131.tar.lz4)** | Tue Jun 16 2026 12:02:21 UTC | `neutron-1` | 14G | 59256131 | `6b963e6361f67561f5d824b7241e45f43a0d57772841fd3475d52dadf37e1a3b` |
 
 ---
 
@@ -12,7 +12,7 @@ neutrond version: `v11.0.0`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59342884.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59441669.tar.lz4"
 cd $HOME/.neutrond
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59342884.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_59441669.tar.lz4"
 cd $HOME/.neutrond
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
