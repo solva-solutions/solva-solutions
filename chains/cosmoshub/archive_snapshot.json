@@ -1,11 +1,11 @@
 {
   "network": "cosmoshub-4",
-  "height": "31515158",
+  "height": "31620448",
   "type": "archive",
   "mirror": "EU",
-  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_31515158.tar.lz4",
-  "filename": "cosmoshub-4_31515158.tar.lz4",
-  "date": "2026-06-12 10:32",
+  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_31620448.tar.lz4",
+  "filename": "cosmoshub-4_31620448.tar.lz4",
+  "date": "2026-06-19 10:35",
   "database": "goleveldb",
   "size": "18T",
   "provider": "CryptoCrew"
