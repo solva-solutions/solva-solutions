@@ -1,13 +1,13 @@
 {
   "network": "dydx-mainnet-1",
-  "height": "94377606",
+  "height": "94515009",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_94377606.tar.lz4",
-  "filename": "dydx-mainnet-1_94377606.tar.lz4",
-  "date": "2026-06-20 13:11",
+  "url": "https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_94515009.tar.lz4",
+  "filename": "dydx-mainnet-1_94515009.tar.lz4",
+  "date": "2026-06-21 13:15",
   "database": "goleveldb",
-  "size": "22G",
-  "checksum": "b890f6a59cf90d182865102e39dd66f70c7a67ff4970127f4ddcfd34bf84fc5e",
+  "size": "25G",
+  "checksum": "b988cf7b06a0ae2c2a6e7bcfbd8853bba4e961864eae339e7bdc736fd672bdf3",
   "provider": "Solva"
 }
