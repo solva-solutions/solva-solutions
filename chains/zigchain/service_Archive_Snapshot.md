@@ -4,7 +4,7 @@ zigchaind version: `v4.0.0`
 | DOWNLOAD | date | chain id | size | height | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------------- |
 | **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9913431.tar.lz4)** | Thu Jun 25 2026 16:17:06 UTC | `zigchain-1` | 620G | 9913431 | `archive` |
-| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_9722903.tar.lz4)** | Thu Jun 18 2026 15:34:54 UTC | `zigchain-1` | 602G | 9722903 | `archive` |
+| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_10104201.tar.lz4)** | Thu Jul 02 2026 15:39:38 UTC | `zigchain-1` | 638G | 10104201 | `archive` |
 ---
 
 ## Download instructions
