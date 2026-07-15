@@ -1,13 +1,13 @@
 {
   "network": "neutron-1",
-  "height": "60785293",
+  "height": "60796915",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_60785293.tar.lz4",
-  "filename": "neutron-1_60785293.tar.lz4",
-  "date": "2026-07-14 15:01",
+  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_60796915.tar.lz4",
+  "filename": "neutron-1_60796915.tar.lz4",
+  "date": "2026-07-15 14:51",
   "database": "goleveldb",
   "size": "14G",
-  "checksum": "a0e0a13a0425ec2ca8251e4afb3a28715b20c4323f58dd0976e22a97ac5c2eb3",
+  "checksum": "3163c7978980ed731303a2c200250051ffdab78a1b81ff25f6da64523fab0d42",
   "provider": "Solva"
 }
