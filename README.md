@@ -112,7 +112,6 @@ The best ways to reach us:
 | `Persistence` | `core-1` | `persistencevaloper1l9m7l6l8k8g7ss7mgjwjgchpclrt74a2uyv879` | [delegate XPRT](https://wallet.keplr.app/chains/persistence?modal=staking&chain=core-1&validator_address=persistencevaloper1l9m7l6l8k8g7ss7mgjwjgchpclrt74a2uyv879&step_id=2) |
 | `Radix` | `olymipa` | `validator_rdx1sdk493n96m2v8t0st6hgrdmdua8y6kp84lcwv35qr7umvj7ar4x3e8` | [delegate XRD](https://dashboard.radixdlt.com/network-staking/validator_rdx1sdk493n96m2v8t0st6hgrdmdua8y6kp84lcwv35qr7umvj7ar4x3e8) |
 | `Saga` | `ssc-1` | `sagavaloper13pcp0cstupahzz3n36x0dlhpa9fr8m9vlcy78y` | [delegate SAGA](https://ping.pub/saga/staking/sagavaloper13pcp0cstupahzz3n36x0dlhpa9fr8m9vlcy78y) |
-| `Secret Network` | `secret-4` | `secretvaloper1tums792cvpugaydvqgl7t6r5khfsgh7n78hs5w` | [delegate SCRT](https://wallet.keplr.app/chains/secret-network?modal=staking&chain=secret-4&validator_address=secretvaloper1tums792cvpugaydvqgl7t6r5khfsgh7n78hs5w&step_id=2) |
 | `Seda` | `seda-1` | `sedavaloper1fzajuz35a4h5sf88lkzefnryped5juzqlg63kv` | [delegate SEDA](https://ping.pub/seda/staking/sedavaloper1fzajuz35a4h5sf88lkzefnryped5juzqlg63kv) |
 | `Sei` | `pacific-1` | `seivaloper1rrw434ua5g5v3786t0ww35we00mqurcny60u8m` | [delegate SEI](https://dashboard.sei.io/stake/seivaloper1rrw434ua5g5v3786t0ww35we00mqurcny60u8m) |
 | `Terra Phoenix` | `phoenix-1` | `terravaloper199fjq4rnfvz24cktl8cervx8h8e90rukmgdv5x` | [delegate LUNA](https://station.terra.money/stake/terravaloper199fjq4rnfvz24cktl8cervx8h8e90rukmgdv5x) |
