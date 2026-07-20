@@ -1,10 +1,10 @@
 ## Node Snapshot
 CryptoCrew provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
-zigchaind version: `v4.0.0`
+zigchaind version: `v4.1.0`
 | DOWNLOAD | date | chain id | size | height | checksum |
 | -------- | ---- | -------- | ---- | ------ | -------- |
-| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6147361.tar.lz4)** | Mon Jun 01 2026 15:33:42 UTC | `zig-test-2` | 2.1G | 6147361 | `08a5ed7d3834e4c76de19941fdeed23f701acb80cf41407c9cdd9a230c1002bf` |
-| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6132063.tar.lz4)** | Sun May 31 2026 15:43:39 UTC | `zig-test-2` | 2.1G | 6132063 | `f1b339155c4662186a21e66933153c33b3c015abe3c5151b7bbf4fcd0b34e5a7` |
+| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6884473.tar.lz4)** | Sun Jul 19 2026 11:16:44 UTC | `zig-test-2` | 2.2G | 6884473 | `6ef2ab5bcf30692093e466c408f70b2df9feb8877d3d26ef49e8ff2d4eaf4a97` |
+| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6869071.tar.lz4)** | Sat Jul 18 2026 11:17:25 UTC | `zig-test-2` | 2.2G | 6869071 | `d297599202765d88316bc53af35355dd6d2852564cd3da8fd961d8e5e53fb14e` |
 
 ---
 
@@ -12,7 +12,7 @@ zigchaind version: `v4.0.0`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6147361.tar.lz4"
+URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6884473.tar.lz4"
 cd $HOME/.zigchain
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6147361.tar.lz4"
+URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/zigchaintestnet/zig-test-2_6884473.tar.lz4"
 cd $HOME/.zigchain
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
