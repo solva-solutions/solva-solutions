@@ -201,35 +201,6 @@
       "trade_url": "https://app.osmosis.zone/?to=XION"
     },
     {
-      "name": "secretnetwork",
-      "prettyName": "Secret Network",
-      "logo_url_svg": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/secretnetwork/logo_secretnetwork.svg",
-      "logo_url_png": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/secretnetwork/logo_secretnetwork.png",
-      "symbol": "SCRT",
-      "denom": "uscrt",
-      "decimals": "6",
-      "address": "secretvaloper1tums792cvpugaydvqgl7t6r5khfsgh7n78hs5w",
-      "operator_account": "secret1au8mn0yhuv765gapwv87tnjceuzlhapgzu0q4a",
-      "relayer_accounts": [
-        "secret15md2qvgma8lnvqv67w0umu2paqkqkhegm0d94r",
-        "secret1yvejj22t78s2vfk7slty2d7fs5lkc8rn3w9mcq"
-      ],
-      "stake_link": "https://wallet.keplr.app/chains/secret-network?modal=staking&chain=secret-4&validator_address=secretvaloper1tums792cvpugaydvqgl7t6r5khfsgh7n78hs5w&step_id=2",
-      "restake": {
-        "address": "secret1fcc93jz6egcc7vhrmpgdflwlkl3pseewq796lm",
-        "run_time": "every 6 hours",
-        "runs_daily": 4,
-        "minimum_reward": 100000,
-        "status_url_svg": "https://healthchecks.io/badge/feedcfef-8d8e-4a26-9689-e72c36/Fuz-Xb1D-2/SCRT.svg"
-      },
-      "rpc": [],
-      "rest": [],
-      "apr": "",
-      "coingecko_id": "secret",
-      "chain_id": "secret-4",
-      "trade_url": "https://www.binance.com/en/trade/SCRT_USDT"
-    },
-    {
       "name": "terra2",
       "prettyName": "Terra Phoenix",
       "logo_url_svg": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/terra2/logo_terrav2.svg",
