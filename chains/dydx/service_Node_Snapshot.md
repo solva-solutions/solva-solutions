@@ -3,8 +3,8 @@ Solva provides daily node-snapshots for the chains we validate. These snapshots 
 dydxprotocold version: `v9.7.0`
 | DOWNLOAD | date | chain id | size | height | checksum |
 | -------- | ---- | -------- | ---- | ------ | -------- |
+| **[DOWNLOAD](https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106596077.tar.lz4)** | Wed Sep 23 2026 13:29:56 UTC | `dydx-mainnet-1` | 98G | 106596077 | `22428e2d70d084ebd805e2aa41bfca633ef3307a38fdc1f12f3f859b2556b6fc` |
 | **[DOWNLOAD](https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106465638.tar.lz4)** | Tue Sep 22 2026 13:31:24 UTC | `dydx-mainnet-1` | 97G | 106465638 | `dc535b687dab4d1520f06e18188fb21be2d40e759628e8403f95241a292f9c33` |
-| **[DOWNLOAD](https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106335718.tar.lz4)** | Mon Sep 21 2026 13:29:51 UTC | `dydx-mainnet-1` | 97G | 106335718 | `e29d5cf68cab367b66db1d2d827afd6fb55cc673e023f969823fac6d656863ea` |
 
 ---
 
@@ -12,7 +12,7 @@ dydxprotocold version: `v9.7.0`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106465638.tar.lz4"
+URL="https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106596077.tar.lz4"
 cd $HOME/.dydxprotocol
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106465638.tar.lz4"
+URL="https://dl-tyo.ccvalidators.com/SNAPSHOTS/dydx/dydx-mainnet-1_106596077.tar.lz4"
 cd $HOME/.dydxprotocol
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data
