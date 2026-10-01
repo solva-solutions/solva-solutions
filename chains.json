@@ -846,10 +846,10 @@
       "logo_url_svg": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/zigchain/logo_zigchain.svg",
       "logo_url_png": "https://raw.githubusercontent.com/clemensgg/CryptoCrew-Validators/main/chains/zigchain/logo_zigchain.png",
       "symbol": "ZIG",
-      "denom": "uzig",
-      "decimals": "6",
+      "denom": "azig",
+      "decimals": "18",
       "address": "zigvaloper19jhukjxn9ckjl5c95453hrmuypgarftg8exy6s",
-      "operator_account": "zig19jhukjxn9ckjl5c95453hrmuypgarftgj72zmf",
+      "operator_account": "z",
       "relayer_accounts": [],
       "stake_link": "https://hub.zigchain.com/validators/detail/?address=zigvaloper19jhukjxn9ckjl5c95453hrmuypgarftg8exy6s",
       "rpc": [
