@@ -1,13 +1,13 @@
 {
   "network": "test-theodoric-2",
-  "height": "8813332",
+  "height": "8838722",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_8813332.tar.lz4",
-  "filename": "test-theodoric-2_8813332.tar.lz4",
-  "date": "2026-10-02 21:05",
+  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_8838722.tar.lz4",
+  "filename": "test-theodoric-2_8838722.tar.lz4",
+  "date": "2026-10-03 21:05",
   "database": "goleveldb",
   "size": "14G",
-  "checksum": "9934f4dba0fdcaaeb9777421dce509bf85b7eb60bcc100d1822eca982ed1c68d",
+  "checksum": "a056b4caca6b735827ec470367103859594db870f1e9bcc4bb53928e99a71141",
   "provider": "CryptoCrew"
 }
