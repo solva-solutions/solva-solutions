@@ -1,18 +1,17 @@
 ## Full Archive Snapshot
 CryptoCrew provides full Archive Snapshots for selected chains. These snapshots include the full block history from the genesis block on, tx_data is included.  
-osmosisd version: `v31.0.0-rc1-3-gcc93ee58d`
+osmosisd version: `v31.1.0`
 | DOWNLOAD | date | chain id | size | height | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_69602941.tar.lz4)** | Wed Sep 02 2026 13:17:00 UTC | `osmosis-1` | 24T | 69602941 | `archive` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_69135770.tar.lz4)** | Wed Aug 26 2026 13:14:52 UTC | `osmosis-1` | 24T | 69135770 | `archive` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_68660858.tar.lz4)** | Wed Aug 19 2026 13:27:36 UTC | `osmosis-1` | 23T | 68660858 | `archive` |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_71919625.tar.lz4)** | Wed Oct 07 2026 14:32:59 UTC | `osmosis-1` | 24T | 71919625 | `archive` |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_71463611.tar.lz4)** | Wed Sep 30 2026 13:55:18 UTC | `osmosis-1` | 24T | 71463611 | `archive` |
 ---
 
 ## Download instructions
 Download & extract snapshot:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_69602941.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/osmosis/osmosis-1_71919625.tar.lz4"
 cd $HOME/.osmosisd
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
