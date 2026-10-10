@@ -1,10 +1,10 @@
 ## Node Snapshot
-CryptoCrew provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
+Solva provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
 gaiad version: `v28.3.0`
-| DOWNLOAD | date | chain id | size | height | checksum |
-| -------- | ---- | -------- | ---- | ------ | -------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33316673.tar.lz4)** | Thu Oct 08 2026 16:24:16 UTC | `cosmoshub-4` | 14G | 33316673 | `af1dcf23a4d4ede9460c085486f5d5c083ace7ffbbbf34d794430f385177106b` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33301292.tar.lz4)** | Wed Oct 07 2026 15:44:59 UTC | `cosmoshub-4` | 14G | 33301292 | `ee0a0c645600d2beeacc47bcaf8442f29d01d094ff23d35b05c4b747f74d4a82` |
+| DOWNLOAD | date | chain id | size | height | database | checksum |
+| -------- | ---- | -------- | ---- | ------ | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33344351_pebbledb.tar.lz4)** | Sat Oct 10 2026 12:03:48 UTC | `cosmoshub-4` | 18G | 33344351 | `pebbledb` | `dd168ae69c1bf38ef5b720e585c0fc19fd6188aef560de504d20a59553eec124` |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33316673.tar.lz4)** | Thu Oct 08 2026 16:24:16 UTC | `cosmoshub-4` | 14G | 33316673 | `goleveldb` | `af1dcf23a4d4ede9460c085486f5d5c083ace7ffbbbf34d794430f385177106b` |
 
 ---
 
@@ -12,7 +12,7 @@ gaiad version: `v28.3.0`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33316673.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33344351_pebbledb.tar.lz4"
 cd $HOME/.gaia
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33316673.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33344351_pebbledb.tar.lz4"
 cd $HOME/.gaia
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
