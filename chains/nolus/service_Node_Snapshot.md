@@ -1,10 +1,10 @@
 ## Node Snapshot
-CryptoCrew provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
+Solva provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
 nolusd version: `v0.8.6`
-| DOWNLOAD | date | chain id | size | height | checksum |
-| -------- | ---- | -------- | ---- | ------ | -------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27312179.tar.lz4)** | Fri Oct 09 2026 02:19:47 UTC | `pirin-1` | 471M | 27312179 | `53f897922d5d30a735ad2b8401e84801b6fe54f35d06c9725824410fdafaf185` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27273515.tar.lz4)** | Thu Oct 08 2026 01:57:07 UTC | `pirin-1` | 485M | 27273515 | `bdd5cff15dfc296e9ead27a27fd50f489ad172624ff74fc86959ac63cc268c06` |
+| DOWNLOAD | date | chain id | size | height | database | checksum |
+| -------- | ---- | -------- | ---- | ------ | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27349804_goleveldb.tar.lz4)** | Sat Oct 10 2026 01:57:03 UTC | `pirin-1` | 478M | 27349804 | `goleveldb` | `a7408d48a0853e272fa9e6ad2f6143e722860da4bd15aef7e95202db4700c994` |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27312179.tar.lz4)** | Fri Oct 09 2026 02:19:47 UTC | `pirin-1` | 471M | 27312179 | `goleveldb` | `53f897922d5d30a735ad2b8401e84801b6fe54f35d06c9725824410fdafaf185` |
 
 ---
 
@@ -12,7 +12,7 @@ nolusd version: `v0.8.6`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27312179.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27349804_goleveldb.tar.lz4"
 cd $HOME/.nolus
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27312179.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27349804_goleveldb.tar.lz4"
 cd $HOME/.nolus
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
