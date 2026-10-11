@@ -1,13 +1,13 @@
 {
   "network": "pirin-1",
-  "height": "27349804",
+  "height": "27388309",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27349804_goleveldb.tar.lz4",
-  "filename": "pirin-1_27349804_goleveldb.tar.lz4",
-  "date": "2026-10-10 01:57",
+  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27388309_goleveldb.tar.lz4",
+  "filename": "pirin-1_27388309_goleveldb.tar.lz4",
+  "date": "2026-10-11 01:57",
   "database": "goleveldb",
-  "size": "478M",
-  "checksum": "a7408d48a0853e272fa9e6ad2f6143e722860da4bd15aef7e95202db4700c994",
+  "size": "477M",
+  "checksum": "2082c964851e6e268202efaa5267fb1c2ba3492fc8550b2cf3a52b0e088f7c67",
   "provider": "Solva"
 }
