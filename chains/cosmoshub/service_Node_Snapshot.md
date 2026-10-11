@@ -3,8 +3,8 @@ Solva provides daily node-snapshots for the chains we validate. These snapshots 
 gaiad version: `v28.3.0`
 | DOWNLOAD | date | chain id | size | height | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33361255_pebbledb.tar.lz4)** | Sun Oct 11 2026 14:43:04 UTC | `cosmoshub-4` | 26G | 33361255 | `pebbledb` | `5f5458049fd0126ab02bfcd8c9eeeb4ff06cde95f4c84be9aace13985aa80679` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33359515_pebbledb.tar.lz4)** | Sun Oct 11 2026 12:07:26 UTC | `cosmoshub-4` | 23G | 33359515 | `pebbledb` | `891d20a52edcb1ef48c8e489b68342f6dedfc144b9743ee4741de6b5d95b641a` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33351920_pebbledb.tar.lz4)** | Sun Oct 11 2026 00:00:20 UTC | `cosmoshub-4` | 21G | 33351920 | `pebbledb` | `b1db255d46724c49039112d861c277363ff8962ef1c946342a05a554bc81d3a4` |
 
 ---
 
@@ -12,7 +12,7 @@ gaiad version: `v28.3.0`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33359515_pebbledb.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33361255_pebbledb.tar.lz4"
 cd $HOME/.gaia
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33359515_pebbledb.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/cosmoshub/cosmoshub-4_33361255_pebbledb.tar.lz4"
 cd $HOME/.gaia
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
