@@ -3,8 +3,8 @@ Solva provides daily node-snapshots for the chains we validate. These snapshots 
 nolusd version: `v0.8.6`
 | DOWNLOAD | date | chain id | size | height | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4)** | Mon Oct 12 2026 01:57:05 UTC | `pirin-1` | 494M | 27426588 | `goleveldb` | `cdb812384c7f7c88ef7192d01231582a3d52cc113a9e443db51ae81216c71379` |
 | **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27388309_goleveldb.tar.lz4)** | Sun Oct 11 2026 01:57:05 UTC | `pirin-1` | 477M | 27388309 | `goleveldb` | `2082c964851e6e268202efaa5267fb1c2ba3492fc8550b2cf3a52b0e088f7c67` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27349804_goleveldb.tar.lz4)** | Sat Oct 10 2026 01:57:03 UTC | `pirin-1` | 478M | 27349804 | `goleveldb` | `a7408d48a0853e272fa9e6ad2f6143e722860da4bd15aef7e95202db4700c994` |
 
 ---
 
@@ -12,7 +12,7 @@ nolusd version: `v0.8.6`
 Download snapshot manually:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27388309_goleveldb.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4"
 cd $HOME/.nolus
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
@@ -28,7 +28,7 @@ mv ./priv_validator_state.json.tmp data/priv_validator_state.json
 No double disk-space needed, but slower and not possible to check checksum:
 ```sh
 sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27388309_goleveldb.tar.lz4"
+URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4"
 cd $HOME/.nolus
 cp data/priv_validator_state.json ./priv_validator_state.json.tmp
 rm -rf data wasm
