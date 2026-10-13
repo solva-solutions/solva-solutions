@@ -1,60 +1,68 @@
-## Node Snapshot
-Solva provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
-nolusd version: `v0.8.6`
-| DOWNLOAD | date | chain id | size | height | database | checksum |
-| -------- | ---- | -------- | ---- | ------ | -------- | -------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4)** | Mon Oct 12 2026 01:57:05 UTC | `pirin-1` | 494M | 27426588 | `goleveldb` | `cdb812384c7f7c88ef7192d01231582a3d52cc113a9e443db51ae81216c71379` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27388309_goleveldb.tar.lz4)** | Sun Oct 11 2026 01:57:05 UTC | `pirin-1` | 477M | 27388309 | `goleveldb` | `2082c964851e6e268202efaa5267fb1c2ba3492fc8550b2cf3a52b0e088f7c67` |
+## nolus Snapshots, provided by Solva
+Solva provides node snapshots for the chains we validate, updated daily. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!
+Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solutions).
+
+| DOWNLOAD | date | chain id | size | height | version | database | checksum |
+| -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27465145_v0.8.6_20261013T0156Z.tar.lz4)** | Tue Oct 13 2026 01:56:00 UTC | `pirin-1` | 489M | 27465145 | `v0.8.6` | `goleveldb` | `43b895b854c2fca63f27573aa58ca7e56f45fa28a54c1ae618306515a12de902` |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4)** | Mon Oct 12 2026 01:57:05 UTC | `pirin-1` | 494M | 27426588 |  | `goleveldb` | `cdb812384c7f7c88ef7192d01231582a3d52cc113a9e443db51ae81216c71379` |
 
 ---
 
 ## Download instructions
-Download snapshot manually:
+
+### Download & verify
+Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27465145_v0.8.6_20261013T0156Z.tar.lz4"
 cd $HOME/.nolus
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget $URL
-wget $URL.sha256
-echo $(cat $(basename $URL.sha256)) $(basename $URL) | sha256sum --check
-lz4 -d $(basename $URL) | tar xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+wget -O snapshot.tar.lz4 "$URL"
+wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
+if echo "$(cat snapshot.tar.lz4.sha256)  snapshot.tar.lz4" | sha256sum --check; then
+  sudo systemctl stop nolusd
+  cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+  rm -rf ./data ./wasm
+  lz4 -dc snapshot.tar.lz4 | tar -xf -
+  mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+  rm -f snapshot.tar.lz4 snapshot.tar.lz4.sha256
+  sudo systemctl start nolusd
+else
+  echo "Checksum mismatch: snapshot not extracted, your node was not touched"
+  rm -f snapshot.tar.lz4 snapshot.tar.lz4.sha256
+fi
 ```
 
-### Or single-stream
-No double disk-space needed, but slower and not possible to check checksum:
+### Streaming
+Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_27426588_goleveldb.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27465145_v0.8.6_20261013T0156Z.tar.lz4"
 cd $HOME/.nolus
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget -O - $URL | lz4 -d | tar -xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+sudo systemctl stop nolusd
+cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+rm -rf ./data ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+sudo systemctl start nolusd
 ```
 
-### Optional: Download `wasm` folder only
-In some cases you can statesync a wasm chain, but the wasm-folder will not be included in the statesync snapshot. Use our wasm-only snapshot for these cases
+### Download script
+Runs the download & verify steps for `$HOME/.nolus`, keeps your validator state and removes the downloaded archive afterwards. Requires `wget` and `lz4`. Review the script before piping it into bash.
 ```sh
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/pirin-1_wasm.tar.lz4"
+sudo systemctl stop nolusd
+curl -sSL https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/download_snapshot.sh | bash
+sudo systemctl start nolusd
+```
+
+### Optional: wasm folder only
+In some cases you can statesync a wasm chain, but the wasm folder isn't part of the statesync snapshot. Use the wasm-only snapshot for these cases.
+```sh
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_wasm.tar.lz4"
 cd $HOME/.nolus
-rm -rf wasm
-wget -O - $URL | lz4 -d | tar -xvf -
+sudo systemctl stop nolusd
+rm -rf ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+sudo systemctl start nolusd
 ```
-
-
-
-## Using the download script
-
-The download script fully automates the download and extraction process, while ensuring that your validator state is preserved. To use it, simply run the following command:
-```sh
-curl -sSL https://dl-eu1.ccvalidators.com/SNAPSHOTS/nolus/download_snapshot.sh | bash
-```
----
-
-After downloading and extracting the snapshot, start the daemon: `sudo systemctl start nolusd`
-
