@@ -1,60 +1,68 @@
-## Node Snapshot
-CryptoCrew provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
-dchain version: `v0.12.0`
-| DOWNLOAD | date | chain id | size | height | checksum |
-| -------- | ---- | -------- | ---- | ------ | -------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_9092136.tar.lz4)** | Tue Oct 13 2026 21:05:39 UTC | `test-theodoric-2` | 14G | 9092136 | `d8385fe2b82ea20306e067d6d5cabc08b6419207cd14949981666dd8a7c47791` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_9066826.tar.lz4)** | Mon Oct 12 2026 21:05:31 UTC | `test-theodoric-2` | 14G | 9066826 | `0d56dce08f3c343eb701adad11f6f787c45d2f6a439cc4ed978039f3f12ee178` |
+## dChain Testnet Snapshots, provided by Solva
+Solva provides node snapshots for selected chains, updated daily. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!
+Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solutions).
+
+| DOWNLOAD | date | chain id | size | height | version | database | checksum |
+| -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9117504_v0.12.0_20261014T2103Z.tar.lz4)** | Wed Oct 14 2026 21:03:00 UTC | `test-theodoric-2` | 14G | 9117504 | `v0.12.0` | `goleveldb` | `17751181fd5577452a5ebccc1599a8c7464a56fab9895de7e0ed50052b60a981` |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9092136.tar.lz4)** | Tue Oct 13 2026 21:05:39 UTC | `test-theodoric-2` | 14G | 9092136 |  | `goleveldb` | `d8385fe2b82ea20306e067d6d5cabc08b6419207cd14949981666dd8a7c47791` |
 
 ---
 
 ## Download instructions
-Download snapshot manually:
+
+### Download & verify
+Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_9092136.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9117504_v0.12.0_20261014T2103Z.tar.lz4"
 cd $HOME/.dchain
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget $URL
-wget $URL.sha256
-echo $(cat $(basename $URL.sha256)) $(basename $URL) | sha256sum --check
-lz4 -d $(basename $URL) | tar xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+wget -O snapshot.tar.lz4 "$URL"
+wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
+if echo "$(cat snapshot.tar.lz4.sha256)  snapshot.tar.lz4" | sha256sum --check; then
+  sudo systemctl stop dchain
+  cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+  rm -rf ./data ./wasm
+  lz4 -dc snapshot.tar.lz4 | tar -xf -
+  mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+  rm -f snapshot.tar.lz4 snapshot.tar.lz4.sha256
+  sudo systemctl start dchain
+else
+  echo "Checksum mismatch: snapshot not extracted, your node was not touched"
+  rm -f snapshot.tar.lz4 snapshot.tar.lz4.sha256
+fi
 ```
 
-### Or single-stream
-No double disk-space needed, but slower and not possible to check checksum:
+### Streaming
+Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_9092136.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9117504_v0.12.0_20261014T2103Z.tar.lz4"
 cd $HOME/.dchain
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget -O - $URL | lz4 -d | tar -xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+sudo systemctl stop dchain
+cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+rm -rf ./data ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+sudo systemctl start dchain
 ```
 
-### Optional: Download `wasm` folder only
-In some cases you can statesync a wasm chain, but the wasm-folder will not be included in the statesync snapshot. Use our wasm-only snapshot for these cases
+### Download script
+Runs the download & verify steps for `$HOME/.dchain`, keeps your validator state and removes the downloaded archive afterwards. Requires `wget` and `lz4`. Review the script before piping it into bash.
 ```sh
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/test-theodoric-2_wasm.tar.lz4"
+sudo systemctl stop dchain
+curl -sSL https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/download_snapshot.sh | bash
+sudo systemctl start dchain
+```
+
+### Optional: wasm folder only
+In some cases you can statesync a wasm chain, but the wasm folder isn't part of the statesync snapshot. Use the wasm-only snapshot for these cases.
+```sh
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_wasm.tar.lz4"
 cd $HOME/.dchain
-rm -rf wasm
-wget -O - $URL | lz4 -d | tar -xvf -
+sudo systemctl stop dchain
+rm -rf ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+sudo systemctl start dchain
 ```
-
-
-
-## Using the download script
-
-The download script fully automates the download and extraction process, while ensuring that your validator state is preserved. To use it, simply run the following command:
-```sh
-curl -sSL https://dl-eu1.ccvalidators.com/SNAPSHOTS/dchaintestnet/download_snapshot.sh | bash
-```
----
-
-After downloading and extracting the snapshot, start the daemon: `sudo systemctl start dchain`
-
