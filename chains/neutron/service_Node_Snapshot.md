@@ -1,60 +1,68 @@
-## Node Snapshot
-Solva provides daily node-snapshots for the chains we validate. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!  
-neutrond version: `v11.3.0-21-gf1d5578d`
-| DOWNLOAD | date | chain id | size | height | checksum |
-| -------- | ---- | -------- | ---- | ------ | -------- |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_61871899.tar.lz4)** | Wed Oct 14 2026 16:46:27 UTC | `neutron-1` | 15G | 61871899 | `56f4448482b80a56007c50ab7f551e5c03849de228ddc6170cbd6f99e4410801` |
-| **[DOWNLOAD](https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_61859022.tar.lz4)** | Tue Oct 13 2026 15:44:29 UTC | `neutron-1` | 14G | 61859022 | `0044c219c63fd172a7738253de085159f656b14fd871c0f1e5d3026ede4693c5` |
+## Neutron Snapshots, provided by Solva
+Solva provides node snapshots for selected chains, updated daily. These snapshots are designed to be minimum-size and can be used to quickly sync your own node!
+Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solutions).
+
+| DOWNLOAD | date | chain id | size | height | version | database | checksum |
+| -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_61883825_v11.3.0-21-gf1d5578d_20261015T1520Z.tar.lz4)** | Thu Oct 15 2026 15:20:00 UTC | `neutron-1` | 13G | 61883825 | `v11.3.0-21-gf1d5578d` | `goleveldb` | `b2e466d1a4dd7a16e429641f36519f9557a948f82c0c2c09d4af27db43226c22` |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_61871899.tar.lz4)** | Wed Oct 14 2026 16:46:27 UTC | `neutron-1` | 15G | 61871899 |  | `goleveldb` | `56f4448482b80a56007c50ab7f551e5c03849de228ddc6170cbd6f99e4410801` |
 
 ---
 
 ## Download instructions
-Download snapshot manually:
+
+### Download & verify
+Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_61871899.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_61883825_v11.3.0-21-gf1d5578d_20261015T1520Z.tar.lz4"
 cd $HOME/.neutrond
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget $URL
-wget $URL.sha256
-echo $(cat $(basename $URL.sha256)) $(basename $URL) | sha256sum --check
-lz4 -d $(basename $URL) | tar xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+wget -O snapshot.tar.lz4 "$URL"
+wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
+if echo "$(cat snapshot.tar.lz4.sha256)  snapshot.tar.lz4" | sha256sum --check; then
+  sudo systemctl stop neutrond
+  cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+  rm -rf ./data ./wasm
+  lz4 -dc snapshot.tar.lz4 | tar -xf -
+  mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+  rm -f snapshot.tar.lz4 snapshot.tar.lz4.sha256
+  sudo systemctl start neutrond
+else
+  echo "Checksum mismatch: snapshot not extracted, your node was not touched"
+  rm -f snapshot.tar.lz4 snapshot.tar.lz4.sha256
+fi
 ```
 
-### Or single-stream
-No double disk-space needed, but slower and not possible to check checksum:
+### Streaming
+Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_61871899.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_61883825_v11.3.0-21-gf1d5578d_20261015T1520Z.tar.lz4"
 cd $HOME/.neutrond
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget -O - $URL | lz4 -d | tar -xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+sudo systemctl stop neutrond
+cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+rm -rf ./data ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+sudo systemctl start neutrond
 ```
 
-### Optional: Download `wasm` folder only
-In some cases you can statesync a wasm chain, but the wasm-folder will not be included in the statesync snapshot. Use our wasm-only snapshot for these cases
+### Download script
+Runs the download & verify steps for `$HOME/.neutrond`, keeps your validator state and removes the downloaded archive afterwards. Requires `wget` and `lz4`. Review the script before piping it into bash.
 ```sh
-URL="https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/neutron-1_wasm.tar.lz4"
+sudo systemctl stop neutrond
+curl -sSL https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/download_snapshot.sh | bash
+sudo systemctl start neutrond
+```
+
+### Optional: wasm folder only
+In some cases you can statesync a wasm chain, but the wasm folder isn't part of the statesync snapshot. Use the wasm-only snapshot for these cases.
+```sh
+sudo apt install -y wget lz4
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_wasm.tar.lz4"
 cd $HOME/.neutrond
-rm -rf wasm
-wget -O - $URL | lz4 -d | tar -xvf -
+sudo systemctl stop neutrond
+rm -rf ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+sudo systemctl start neutrond
 ```
-
-
-
-## Using the download script
-
-The download script fully automates the download and extraction process, while ensuring that your validator state is preserved. To use it, simply run the following command:
-```sh
-curl -sSL https://dl-eu1.ccvalidators.com/SNAPSHOTS/neutron/download_snapshot.sh | bash
-```
----
-
-After downloading and extracting the snapshot, start the daemon: `sudo systemctl start neutrond`
-
