@@ -1,26 +1,38 @@
-## Full Archive Snapshot
-CryptoCrew provides full Archive Snapshots for selected chains. These snapshots include the full block history from the genesis block on, tx_data is included.  
-zigchaind version: `v5.1.2`
-| DOWNLOAD | date | chain id | size | height | snapshot type |
-| -------- | ---- | -------- | ---- | ------ | ------------- |
-| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_12764997.tar.lz4)** | Thu Oct 08 2026 16:14:17 UTC | `zigchain-1` | 843G | 12764997 | `archive` |
-| **[DOWNLOAD](https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_12575559.tar.lz4)** | Thu Oct 01 2026 16:11:04 UTC | `zigchain-1` | 826G | 12575559 | `archive` |
+## ZIGChain Archive Snapshots, provided by Solva
+Solva provides full archive snapshots for selected chains, updated weekly. These snapshots include the full block history from the genesis block on, tx_data is included.
+Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solutions).
+
+| DOWNLOAD | date | chain id | size | height | version | database | snapshot type |
+| -------- | ---- | -------- | ---- | ------ | ------- | -------- | ------------- |
+| **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_12955394_archive_v5.1.2_20261015T1355Z.tar.lz4)** | Thu Oct 15 2026 13:55:00 UTC | `zigchain-1` | 856G | 12955394 | `v5.1.2` | `goleveldb` | `archive` |
+| **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_12764997.tar.lz4)** | Thu Oct 08 2026 16:14:17 UTC | `zigchain-1` | 843G | 12764997 |  | `goleveldb` | `archive` |
+
 ---
 
 ## Download instructions
-Download & extract snapshot:
+
+### Streaming
+Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified. Recommended for archive snapshots.
 ```sh
-sudo apt install wget lz4
-URL="https://dl-eu2.ccvalidators.com/SNAPSHOTS/archive/zigchain/zigchain-1_12764997.tar.lz4"
+sudo apt install -y wget lz4
+URL="https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_12955394_archive_v5.1.2_20261015T1355Z.tar.lz4"
 cd $HOME/.zigchain
-cp data/priv_validator_state.json ./priv_validator_state.json.tmp
-rm -rf data wasm
-wget -O - $URL | lz4 -d | tar -xvf -
-rm data/priv_validator_state.json
-mv ./priv_validator_state.json.tmp data/priv_validator_state.json
+sudo systemctl stop zigchaind
+cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
+rm -rf ./data ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+mv -f ./priv_validator_state.json.tmp ./data/priv_validator_state.json
+sudo systemctl start zigchaind
 ```
 
----
-
-After downloading and extracting the snapshot, start the daemon: `sudo systemctl start zigchaind`
-
+### Optional: wasm folder only
+In some cases you can statesync a wasm chain, but the wasm folder isn't part of the statesync snapshot. Use the wasm-only snapshot for these cases.
+```sh
+sudo apt install -y wget lz4
+URL="https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_wasm.tar.lz4"
+cd $HOME/.zigchain
+sudo systemctl stop zigchaind
+rm -rf ./wasm
+wget -O - "$URL" | lz4 -dc | tar -xf -
+sudo systemctl start zigchaind
+```
