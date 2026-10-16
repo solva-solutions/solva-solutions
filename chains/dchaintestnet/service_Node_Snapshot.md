@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9169099_v0.12.0_20261016T2103Z.tar.lz4)** | Fri Oct 16 2026 21:03:00 UTC | `test-theodoric-2` | 14G | 9169099 | `v0.12.0` | `goleveldb` | `e4064bd7fbeaa2d4c40ad938da3dfa0b82dd299aa56d228ded131794f1a7ab1c` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9142879_v0.12.0_20261015T2103Z.tar.lz4)** | Thu Oct 15 2026 21:03:00 UTC | `test-theodoric-2` | 14G | 9142879 | `v0.12.0` | `goleveldb` | `7686acd417d62c6cbfa28e8647b521008e48964b769541653676676d04787590` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9117504_v0.12.0_20261014T2103Z.tar.lz4)** | Wed Oct 14 2026 21:03:00 UTC | `test-theodoric-2` | 14G | 9117504 | `v0.12.0` | `goleveldb` | `17751181fd5577452a5ebccc1599a8c7464a56fab9895de7e0ed50052b60a981` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9142879_v0.12.0_20261015T2103Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9169099_v0.12.0_20261016T2103Z.tar.lz4"
 cd $HOME/.dchain
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -37,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9142879_v0.12.0_20261015T2103Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-2_9169099_v0.12.0_20261016T2103Z.tar.lz4"
 cd $HOME/.dchain
 sudo systemctl stop dchain
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
