@@ -1,15 +1,15 @@
 {
   "network": "cosmoshub-4",
-  "height": "33509692",
+  "height": "33517336",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33509692_pebbledb_v28.3.0_20261021T0932Z.tar.lz4",
-  "filename": "cosmoshub-4_33509692_pebbledb_v28.3.0_20261021T0932Z.tar.lz4",
-  "date": "2026-10-21 09:32",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33517336_pebbledb_v28.3.0_20261021T2139Z.tar.lz4",
+  "filename": "cosmoshub-4_33517336_pebbledb_v28.3.0_20261021T2139Z.tar.lz4",
+  "date": "2026-10-21 21:39",
   "version": "v28.3.0",
-  "timestamp": "2026-10-21T09:32:00Z",
+  "timestamp": "2026-10-21T21:39:00Z",
   "database": "pebbledb",
   "size": "15G",
-  "checksum": "e7f9ff84a805c325ab76974876338d904c2cc7bc1ba4488d666d4049fb61ee77",
+  "checksum": "d8e449223d7a1c79e05a63773f1c50a187903e338da30fb318075dcf4f9d8d05",
   "provider": "Solva"
 }
