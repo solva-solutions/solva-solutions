@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | ------------- |
+| **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13145680_archive_v5.1.2_20261022T1355Z.tar.lz4)** | Thu Oct 22 2026 13:55:00 UTC | `zigchain-1` | 869G | 13145680 | `v5.1.2` | `goleveldb` | `archive` |
 | **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_12955394_archive_v5.1.2_20261015T1355Z.tar.lz4)** | Thu Oct 15 2026 13:55:00 UTC | `zigchain-1` | 856G | 12955394 | `v5.1.2` | `goleveldb` | `archive` |
-| **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_12764997.tar.lz4)** | Thu Oct 08 2026 16:14:17 UTC | `zigchain-1` | 843G | 12764997 |  | `goleveldb` | `archive` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified. Recommended for archive snapshots.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_12955394_archive_v5.1.2_20261015T1355Z.tar.lz4"
+URL="https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13145680_archive_v5.1.2_20261022T1355Z.tar.lz4"
 cd $HOME/.zigchain
 sudo systemctl stop zigchaind
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
