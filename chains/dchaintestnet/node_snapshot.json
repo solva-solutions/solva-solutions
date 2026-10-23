@@ -1,15 +1,15 @@
 {
   "network": "test-theodoric-3",
-  "height": "58139",
+  "height": "83486",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-3_58139_v1.0.0-rc.2_20261022T1619Z.tar.lz4",
-  "filename": "test-theodoric-3_58139_v1.0.0-rc.2_20261022T1619Z.tar.lz4",
-  "date": "2026-10-22 16:19",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/dchaintestnet/test-theodoric-3_83486_v1.0.0-rc.2_20261023T1619Z.tar.lz4",
+  "filename": "test-theodoric-3_83486_v1.0.0-rc.2_20261023T1619Z.tar.lz4",
+  "date": "2026-10-23 16:19",
   "version": "v1.0.0-rc.2",
-  "timestamp": "2026-10-22T16:19:00Z",
+  "timestamp": "2026-10-23T16:19:00Z",
   "database": "goleveldb",
-  "size": "623M",
-  "checksum": "8a5cf040250b6c56736569a57a83615cd551e3cfa6dca8c2c06500072cf3abb8",
+  "size": "788M",
+  "checksum": "24b05d5297953f4703b4d9785abc2428a3a5399ece4b1053f42b75dd3e391295",
   "provider": "Solva"
 }
