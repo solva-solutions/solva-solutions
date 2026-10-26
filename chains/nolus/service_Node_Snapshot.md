@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27973430_v0.8.6_20261026T0157Z.tar.lz4)** | Mon Oct 26 2026 01:57:00 UTC | `pirin-1` | 653M | 27973430 | `v0.8.6` | `goleveldb` | `86baffc7e9c1d89ea6245cd1c2e6d60673c1b34c97afa8dbd96eea0115a86e69` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27933013_v0.8.6_20261025T0157Z.tar.lz4)** | Sun Oct 25 2026 01:57:00 UTC | `pirin-1` | 656M | 27933013 | `v0.8.6` | `goleveldb` | `0346c83fca998835bf825d72ec596740767f2140ff15546192a22522e10b32e8` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27892576_v0.8.6_20261024T0157Z.tar.lz4)** | Sat Oct 24 2026 01:57:00 UTC | `pirin-1` | 659M | 27892576 | `v0.8.6` | `goleveldb` | `33eaa09929b11876b467f2e0c2b7bc7f9034ba25072604ba39dbe3b653eef10b` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27933013_v0.8.6_20261025T0157Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27973430_v0.8.6_20261026T0157Z.tar.lz4"
 cd $HOME/.nolus
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -37,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27933013_v0.8.6_20261025T0157Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_27973430_v0.8.6_20261026T0157Z.tar.lz4"
 cd $HOME/.nolus
 sudo systemctl stop nolusd
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
