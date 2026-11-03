@@ -1,0 +1,15 @@
+{
+  "network": "dchain-1",
+  "height": "6774",
+  "type": "pruned",
+  "mirror": "EU",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_6774_v1.0.0-rc.4_20261103T1733Z.tar.lz4",
+  "filename": "dchain-1_6774_v1.0.0-rc.4_20261103T1733Z.tar.lz4",
+  "date": "2026-11-03 17:33",
+  "version": "v1.0.0-rc.4",
+  "timestamp": "2026-11-03T17:33:00Z",
+  "database": "goleveldb",
+  "size": "133M",
+  "checksum": "5ac530c6b07ce2e8bd15eb8f889239d5d0b4451e52ae791d0839e2c2e9bfc386",
+  "provider": "Solva"
+}
