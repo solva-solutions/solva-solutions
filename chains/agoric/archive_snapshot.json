@@ -1,12 +1,15 @@
 {
   "network": "agoric-3",
-  "height": "27798717",
+  "height": "28088558",
   "type": "archive",
   "mirror": "EU",
-  "url": "https://dl-eu1.ccvalidators.com/SNAPSHOTS/archive/agoric/agoric-3_27798717.tar.lz4",
-  "filename": "agoric-3_27798717.tar.lz4",
-  "date": "2026-10-15 04:32",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/archive/agoric/agoric-3_28088558_archive_v0.36.0-u23.1_20261102T1030Z.tar.lz4",
+  "filename": "agoric-3_28088558_archive_v0.36.0-u23.1_20261102T1030Z.tar.lz4",
+  "date": "2026-11-02 10:30",
+  "version": "v0.36.0-u23.1",
+  "timestamp": "2026-11-02T10:30:00Z",
   "database": "goleveldb",
   "size": "6.0T",
-  "provider": "CryptoCrew"
+  "checksum": "archive",
+  "provider": "Solva"
 }
