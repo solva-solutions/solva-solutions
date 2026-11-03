@@ -4,6 +4,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_7026_v1.0.0-rc.4_20261103T1747Z.tar.lz4)** | Tue Nov 03 2026 17:47:00 UTC | `dchain-1` | 136M | 7026 | `v1.0.0-rc.4` | `goleveldb` | `ea1f65d921797c7907b9ff60a2407e2f4f569f0a986e3e161f79ef77e6a9924d` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_6774_v1.0.0-rc.4_20261103T1733Z.tar.lz4)** | Tue Nov 03 2026 17:33:00 UTC | `dchain-1` | 133M | 6774 | `v1.0.0-rc.4` | `goleveldb` | `5ac530c6b07ce2e8bd15eb8f889239d5d0b4451e52ae791d0839e2c2e9bfc386` |
 
 ---
@@ -14,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_6774_v1.0.0-rc.4_20261103T1733Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_7026_v1.0.0-rc.4_20261103T1747Z.tar.lz4"
 cd $HOME/.dchain
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -36,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_6774_v1.0.0-rc.4_20261103T1733Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_7026_v1.0.0-rc.4_20261103T1747Z.tar.lz4"
 cd $HOME/.dchain
 sudo systemctl stop dchain
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
