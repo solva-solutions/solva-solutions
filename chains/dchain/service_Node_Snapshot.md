@@ -4,7 +4,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_83076_v1.0.0-rc.4_20261106T1736Z.tar.lz4)** | Fri Nov 06 2026 17:36:00 UTC | `dchain-1` | 4.8M | 83076 | `v1.0.0-rc.4` | `goleveldb` | `ab14dece65369388904428ea28ccdc7ed6fbb35025ff410e0f686101139e1ce1` |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_133822_v1.0.0-rc.4_20261108T1736Z.tar.lz4)** | Sun Nov 08 2026 17:36:00 UTC | `dchain-1` | 13M | 133822 | `v1.0.0-rc.4` | `goleveldb` | `ea0da997a41f0e3a4f18d2ae52ee6dc31203b482bc45b3427a5075ed20f0a1b7` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_108536_v1.0.0-rc.4_20261107T1741Z.tar.lz4)** | Sat Nov 07 2026 17:41:00 UTC | `dchain-1` | 9.8M | 108536 | `v1.0.0-rc.4` | `goleveldb` | `6b8552d6d70e69b7408b33c64a03ec51488de88b5a28915f091ad71d28826071` |
 
 ---
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_108536_v1.0.0-rc.4_20261107T1741Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_133822_v1.0.0-rc.4_20261108T1736Z.tar.lz4"
 cd $HOME/.dchain
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -37,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_108536_v1.0.0-rc.4_20261107T1741Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_133822_v1.0.0-rc.4_20261108T1736Z.tar.lz4"
 cd $HOME/.dchain
 sudo systemctl stop dchain
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
