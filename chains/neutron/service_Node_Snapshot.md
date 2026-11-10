@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62205744_v11.3.0-21-gf1d5578d_20261110T1521Z.tar.lz4)** | Tue Nov 10 2026 15:21:00 UTC | `neutron-1` | 15G | 62205744 | `v11.3.0-21-gf1d5578d` | `goleveldb` | `bf02de54a09ad94cec78f5f68bb04634b6fbd31c122d666c797acede7a743c55` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62193292_v11.3.0-21-gf1d5578d_20261109T1513Z.tar.lz4)** | Mon Nov 09 2026 15:13:00 UTC | `neutron-1` | 13G | 62193292 | `v11.3.0-21-gf1d5578d` | `goleveldb` | `837740675fe972929288ac053c1f646771e7a3515e7c8b982f5ecbc0025263b8` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62180907_v11.3.0-21-gf1d5578d_20261108T1519Z.tar.lz4)** | Sun Nov 08 2026 15:19:00 UTC | `neutron-1` | 15G | 62180907 | `v11.3.0-21-gf1d5578d` | `goleveldb` | `ef3ad08a36153d0e636cdd7abe702ccc1bef3f29c6163c5901f8b2d0722fe955` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62193292_v11.3.0-21-gf1d5578d_20261109T1513Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62205744_v11.3.0-21-gf1d5578d_20261110T1521Z.tar.lz4"
 cd $HOME/.neutrond
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -37,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62193292_v11.3.0-21-gf1d5578d_20261109T1513Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62205744_v11.3.0-21-gf1d5578d_20261110T1521Z.tar.lz4"
 cd $HOME/.neutrond
 sudo systemctl stop neutrond
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
