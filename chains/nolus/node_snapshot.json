@@ -1,15 +1,15 @@
 {
   "network": "pirin-1",
-  "height": "28568177",
+  "height": "28612511",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_28568177_v0.8.6_20261109T0157Z.tar.lz4",
-  "filename": "pirin-1_28568177_v0.8.6_20261109T0157Z.tar.lz4",
-  "date": "2026-11-09 01:57",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/nolus/pirin-1_28612511_v0.8.6_20261110T0157Z.tar.lz4",
+  "filename": "pirin-1_28612511_v0.8.6_20261110T0157Z.tar.lz4",
+  "date": "2026-11-10 01:57",
   "version": "v0.8.6",
-  "timestamp": "2026-11-09T01:57:00Z",
+  "timestamp": "2026-11-10T01:57:00Z",
   "database": "goleveldb",
-  "size": "486M",
-  "checksum": "ab62f8356aeb320ef568128ad6ed6b91174c0e334ea4a7065aa7ffd1200e93c0",
+  "size": "483M",
+  "checksum": "fe2b4381d13c570bcf4bac04442ec9eaf36e0b320fa2ef221aa1214fc610fb3f",
   "provider": "Solva"
 }
