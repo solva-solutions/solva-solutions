@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | ------------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_33781642_archive_v29.0.1_20261108T0945Z.tar.lz4)** | Sun Nov 08 2026 09:45:00 UTC | `cosmoshub-4` | 19T | 33781642 | `v29.0.1` | `goleveldb` | `archive` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_33570368_archive_v28.3.0_20261025T0945Z.tar.lz4)** | Sun Oct 25 2026 09:45:00 UTC | `cosmoshub-4` | 19T | 33570368 | `v28.3.0` | `goleveldb` | `archive` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_33404937.tar.lz4)** | Fri Oct 16 2026 14:33:27 UTC | `cosmoshub-4` | 19T | 33404937 |  | `goleveldb` | `archive` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified. Recommended for archive snapshots.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_33570368_archive_v28.3.0_20261025T0945Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/cosmoshub/cosmoshub-4_33781642_archive_v29.0.1_20261108T0945Z.tar.lz4"
 cd $HOME/.gaia
 sudo systemctl stop gaiad
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
