@@ -4,8 +4,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | ------------- |
-| **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13525639_archive_v6.0.0_20261105T1355Z.tar.lz4)** | Thu Nov 05 2026 13:55:00 UTC | `zigchain-1` | 897G | 13525639 | `v6.0.0` | `goleveldb` | `archive` |
-| **[DOWNLOAD](https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13335993_archive_v5.1.2_20261029T1355Z.tar.lz4)** | Thu Oct 29 2026 13:55:00 UTC | `zigchain-1` | 884G | 13335993 | `v5.1.2` | `goleveldb` | `archive` |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13714828_archive_v6.0.0_20261112T1355Z.tar.lz4)** | Thu Nov 12 2026 13:55:00 UTC | `zigchain-1` | 912G | 13714828 | `v6.0.0` | `goleveldb` | `archive` |
 
 ---
 
@@ -15,7 +14,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified. Recommended for archive snapshots.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13525639_archive_v6.0.0_20261105T1355Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_13714828_archive_v6.0.0_20261112T1355Z.tar.lz4"
 cd $HOME/.zigchain
 sudo systemctl stop zigchaind
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
@@ -29,7 +28,7 @@ sudo systemctl start zigchaind
 In some cases you can statesync a wasm chain, but the wasm folder isn't part of the statesync snapshot. Use the wasm-only snapshot for these cases.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu2.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_wasm.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/zigchain/zigchain-1_wasm.tar.lz4"
 cd $HOME/.zigchain
 sudo systemctl stop zigchaind
 rm -rf ./wasm
