@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33841713_pebbledb_v29.0.1_20261112T0848Z.tar.lz4)** | Thu Nov 12 2026 08:48:00 UTC | `cosmoshub-4` | 11G | 33841713 | `v29.0.1` | `pebbledb` | `10265cdbf0ef5c2a9bafd7b4cce96116bccdde38274eab8a1fdc7f4004ab8751` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33834205_pebbledb_v29.0.1_20261111T2057Z.tar.lz4)** | Wed Nov 11 2026 20:57:00 UTC | `cosmoshub-4` | 11G | 33834205 | `v29.0.1` | `pebbledb` | `8ddef078a4ed5d7930290cfc10cd51cacd36c3ce017a9ba1e6e1ad3962fd5cd3` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33826496_pebbledb_v29.0.1_20261111T0846Z.tar.lz4)** | Wed Nov 11 2026 08:46:00 UTC | `cosmoshub-4` | 11G | 33826496 | `v29.0.1` | `pebbledb` | `01dfccfdfaa9e8c368984ca1e84d08a9105fd125c73a4b9535c9d8b3c156fe64` |
 
 ---
 
@@ -17,7 +17,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33834205_pebbledb_v29.0.1_20261111T2057Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33841713_pebbledb_v29.0.1_20261112T0848Z.tar.lz4"
 cd $HOME/.gaia
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -39,7 +39,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33834205_pebbledb_v29.0.1_20261111T2057Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/cosmoshub/cosmoshub-4_33841713_pebbledb_v29.0.1_20261112T0848Z.tar.lz4"
 cd $HOME/.gaia
 sudo systemctl stop gaiad
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
