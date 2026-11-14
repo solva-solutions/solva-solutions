@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | ------------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/neutron/neutron-1_62227820_archive_v11.3.0-21-gf1d5578d_20261112T1002Z.tar.lz4)** | Thu Nov 12 2026 10:02:00 UTC | `neutron-1` | 19T | 62227820 | `v11.3.0-21-gf1d5578d` | `goleveldb` | `archive` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/neutron/neutron-1_62054020_archive_v11.3.0-21-gf1d5578d_20261029T1000Z.tar.lz4)** | Thu Oct 29 2026 10:00:00 UTC | `neutron-1` | 19T | 62054020 | `v11.3.0-21-gf1d5578d` | `goleveldb` | `archive` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/neutron/neutron-1_61832321.tar.lz4)** | Tue Oct 13 2026 11:49:12 UTC | `neutron-1` | 19T | 61832321 |  | `goleveldb` | `archive` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified. Recommended for archive snapshots.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/neutron/neutron-1_62054020_archive_v11.3.0-21-gf1d5578d_20261029T1000Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/neutron/neutron-1_62227820_archive_v11.3.0-21-gf1d5578d_20261112T1002Z.tar.lz4"
 cd $HOME/.neutrond
 sudo systemctl stop neutrond
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
