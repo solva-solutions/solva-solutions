@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | snapshot type |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | ------------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/osmosis/osmosis-1_75306262_archive_v32.0.0_20261116T2315Z.tar.lz4)** | Mon Nov 16 2026 23:15:00 UTC | `osmosis-1` | 24T | 75306262 | `v32.0.0` | `goleveldb` | `archive` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/osmosis/osmosis-1_74957706_archive_v32.0.0_20261113T0430Z.tar.lz4)** | Fri Nov 13 2026 04:30:00 UTC | `osmosis-1` | 24T | 74957706 | `v32.0.0` | `goleveldb` | `archive` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/archive/osmosis/osmosis-1_73918625_archive_v32.0.0_20261102T2315Z.tar.lz4)** | Mon Nov 02 2026 23:15:00 UTC | `osmosis-1` | 24T | 73918625 | `v32.0.0` | `goleveldb` | `archive` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified. Recommended for archive snapshots.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/osmosis/osmosis-1_74957706_archive_v32.0.0_20261113T0430Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/archive/osmosis/osmosis-1_75306262_archive_v32.0.0_20261116T2315Z.tar.lz4"
 cd $HOME/.osmosisd
 sudo systemctl stop osmosisd
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
