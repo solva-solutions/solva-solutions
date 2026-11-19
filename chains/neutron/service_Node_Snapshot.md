@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62316927_v11.4.0_20261119T1509Z.tar.lz4)** | Thu Nov 19 2026 15:09:00 UTC | `neutron-1` | 15G | 62316927 | `v11.4.0` | `goleveldb` | `999fc5857504fb43aae22e07d2c7721c726fe6c15546cf81868d3a914bd46372` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62304721_v11.4.0_20261118T1510Z.tar.lz4)** | Wed Nov 18 2026 15:10:00 UTC | `neutron-1` | 15G | 62304721 | `v11.4.0` | `goleveldb` | `694bb42de25ed8ab80648981dd9749410968b973bdf76165e90810c63830919d` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62294021_v11.4.0_20261117T1816Z.tar.lz4)** | Tue Nov 17 2026 18:16:00 UTC | `neutron-1` | 16G | 62294021 | `v11.4.0` | `goleveldb` | `039d51ded83a820124cdcf49fd52c484221f514b812b4e6f863163cd0eb818bd` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62304721_v11.4.0_20261118T1510Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62316927_v11.4.0_20261119T1509Z.tar.lz4"
 cd $HOME/.neutrond
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -37,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62304721_v11.4.0_20261118T1510Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62316927_v11.4.0_20261119T1509Z.tar.lz4"
 cd $HOME/.neutrond
 sudo systemctl stop neutrond
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
