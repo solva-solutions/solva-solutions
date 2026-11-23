@@ -1,15 +1,15 @@
 {
   "network": "zig-test-2",
-  "height": "8830306",
+  "height": "8839059",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/zigchaintestnet/zig-test-2_8830306_v6.0.0_20261122T1939Z.tar.lz4",
-  "filename": "zig-test-2_8830306_v6.0.0_20261122T1939Z.tar.lz4",
-  "date": "2026-11-22 19:39",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/zigchaintestnet/zig-test-2_8839059_v6.0.0_20261123T0917Z.tar.lz4",
+  "filename": "zig-test-2_8839059_v6.0.0_20261123T0917Z.tar.lz4",
+  "date": "2026-11-23 09:17",
   "version": "v6.0.0",
-  "timestamp": "2026-11-22T19:39:00Z",
+  "timestamp": "2026-11-23T09:17:00Z",
   "database": "goleveldb",
-  "size": "439M",
-  "checksum": "ebbd8c96251d29b88129ea6d5c9de6f06fa13af0df04a464923719f9c7bd780e",
+  "size": "434M",
+  "checksum": "9cd7eb890ae49a3ac0e61aff7d084510db660ce4ba7e975e65cc8c1d79c75c0a",
   "provider": "Solva"
 }
