@@ -1,15 +1,15 @@
 {
   "network": "dchain-1",
-  "height": "516337",
+  "height": "541843",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_516337_v1.0.0-rc.4_20261123T1741Z.tar.lz4",
-  "filename": "dchain-1_516337_v1.0.0-rc.4_20261123T1741Z.tar.lz4",
-  "date": "2026-11-23 17:41",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/dchain/dchain-1_541843_v1.0.0-rc.4_20261124T1736Z.tar.lz4",
+  "filename": "dchain-1_541843_v1.0.0-rc.4_20261124T1736Z.tar.lz4",
+  "date": "2026-11-24 17:36",
   "version": "v1.0.0-rc.4",
-  "timestamp": "2026-11-23T17:41:00Z",
+  "timestamp": "2026-11-24T17:36:00Z",
   "database": "goleveldb",
-  "size": "7.5M",
-  "checksum": "7db905e226919bb3b032e46da347c1c024391712fc53988edac511d7e57aec1f",
+  "size": "13M",
+  "checksum": "69df635fde38a034953bbc6fcc47b9dca7fa11904e781a81c42bfdd4d0436620",
   "provider": "Solva"
 }
