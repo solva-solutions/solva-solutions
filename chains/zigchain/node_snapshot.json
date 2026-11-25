@@ -1,15 +1,15 @@
 {
   "network": "zigchain-1",
-  "height": "14035907",
+  "height": "14062546",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14035907_v6.0.0_20261124T1448Z.tar.lz4",
-  "filename": "zigchain-1_14035907_v6.0.0_20261124T1448Z.tar.lz4",
-  "date": "2026-11-24 14:48",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14062546_v6.0.0_20261125T1445Z.tar.lz4",
+  "filename": "zigchain-1_14062546_v6.0.0_20261125T1445Z.tar.lz4",
+  "date": "2026-11-25 14:45",
   "version": "v6.0.0",
-  "timestamp": "2026-11-24T14:48:00Z",
+  "timestamp": "2026-11-25T14:45:00Z",
   "database": "goleveldb",
   "size": "2.5G",
-  "checksum": "8ee551b2e67a0c668491efc22d853e254fa9b590cab3b73e1f2b7f52d5dd2413",
+  "checksum": "08c0c00fcda314eb2fffe3d22b92dc35ef63238b07657da9d4dca52b1d8c72f7",
   "provider": "Solva"
 }

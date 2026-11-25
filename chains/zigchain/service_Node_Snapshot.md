@@ -4,8 +4,8 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 
 | DOWNLOAD | date | chain id | size | height | version | database | checksum |
 | -------- | ---- | -------- | ---- | ------ | ------- | -------- | -------- |
+| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14062546_v6.0.0_20261125T1445Z.tar.lz4)** | Wed Nov 25 2026 14:45:00 UTC | `zigchain-1` | 2.5G | 14062546 | `v6.0.0` | `goleveldb` | `08c0c00fcda314eb2fffe3d22b92dc35ef63238b07657da9d4dca52b1d8c72f7` |
 | **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14035907_v6.0.0_20261124T1448Z.tar.lz4)** | Tue Nov 24 2026 14:48:00 UTC | `zigchain-1` | 2.5G | 14035907 | `v6.0.0` | `goleveldb` | `8ee551b2e67a0c668491efc22d853e254fa9b590cab3b73e1f2b7f52d5dd2413` |
-| **[DOWNLOAD](https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14009247_v6.0.0_20261123T1446Z.tar.lz4)** | Mon Nov 23 2026 14:46:00 UTC | `zigchain-1` | 2.5G | 14009247 | `v6.0.0` | `goleveldb` | `7ef4a264b348f033ff204826e6f41fdd9e3bf54393645085af804a3fb39b0db2` |
 
 ---
 
@@ -15,7 +15,7 @@ Browse all snapshots at [snapshots.solva.solutions](https://snapshots.solva.solu
 Downloads the snapshot and verifies its SHA-256 checksum before touching your node, then stops the node, extracts the snapshot while keeping your `priv_validator_state.json` and starts the node again. Needs free disk space for the archive plus the extracted data.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14035907_v6.0.0_20261124T1448Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14062546_v6.0.0_20261125T1445Z.tar.lz4"
 cd $HOME/.zigchain
 wget -O snapshot.tar.lz4 "$URL"
 wget -O snapshot.tar.lz4.sha256 "$URL.sha256"
@@ -37,7 +37,7 @@ fi
 Downloads and extracts in a single pass while keeping your `priv_validator_state.json`, so no extra disk space is needed, but the checksum can't be verified.
 ```sh
 sudo apt install -y wget lz4
-URL="https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14035907_v6.0.0_20261124T1448Z.tar.lz4"
+URL="https://dl-eu1.solva.solutions/SNAPSHOTS/zigchain/zigchain-1_14062546_v6.0.0_20261125T1445Z.tar.lz4"
 cd $HOME/.zigchain
 sudo systemctl stop zigchaind
 cp ./data/priv_validator_state.json ./priv_validator_state.json.tmp
