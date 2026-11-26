@@ -1,15 +1,15 @@
 {
   "network": "neutron-1",
-  "height": "62390114",
+  "height": "62402298",
   "type": "pruned",
   "mirror": "EU",
-  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62390114_v11.4.0_20261125T1508Z.tar.lz4",
-  "filename": "neutron-1_62390114_v11.4.0_20261125T1508Z.tar.lz4",
-  "date": "2026-11-25 15:08",
+  "url": "https://dl-eu1.solva.solutions/SNAPSHOTS/neutron/neutron-1_62402298_v11.4.0_20261126T1509Z.tar.lz4",
+  "filename": "neutron-1_62402298_v11.4.0_20261126T1509Z.tar.lz4",
+  "date": "2026-11-26 15:09",
   "version": "v11.4.0",
-  "timestamp": "2026-11-25T15:08:00Z",
+  "timestamp": "2026-11-26T15:09:00Z",
   "database": "goleveldb",
   "size": "15G",
-  "checksum": "97bb3e8b77f95ae8b44ebecbbeee681f5c5f90bab6df034e610106b522fba33e",
+  "checksum": "5eafc4c541b8c2b95941e9cdcaf7b396c1a1d89c90f85e2631d5c2403d233523",
   "provider": "Solva"
 }
